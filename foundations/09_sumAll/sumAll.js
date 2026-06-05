@@ -3,11 +3,16 @@ const sumAll = function(a, b) {
     typeof(b) !== "number") {
         return "ERROR";
     }
+
     let theArr = [a, b]
+
     let num = theArr.sort();
+
     let small = num.at(0)
     let large = num.at(1)
+    
     let sum = 0;
+
     for (let i = small; i <= large; i++) {
         sum += i;
     }
